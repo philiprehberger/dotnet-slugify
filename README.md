@@ -63,6 +63,12 @@ Slug.Generate("Hello World", options);  // "Hello_World"
 6. Trim separators from both ends.
 7. Truncate to `MaxLength`, trimming any trailing separator.
 
+## Development
+
+```bash
+dotnet build src/Philiprehberger.Slugify.csproj --configuration Release
+```
+
 ## License
 
 MIT
