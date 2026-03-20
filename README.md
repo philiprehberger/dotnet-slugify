@@ -6,7 +6,7 @@
 
 Convert arbitrary text to clean, URL-safe slugs. Handles Unicode diacritics, collapses separators, and enforces a maximum length — no external dependencies.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Philiprehberger.Slugify
@@ -37,6 +37,16 @@ var options = new SlugOptions
 Slug.Generate("Hello World", options);  // "Hello_World"
 ```
 
+### How it works
+
+1. Normalise to Unicode NFD to decompose accented characters.
+2. Strip non-spacing combining marks (removes diacritics).
+3. Optionally convert to lowercase.
+4. Replace every run of non-alphanumeric characters with the separator.
+5. Collapse consecutive separators into one.
+6. Trim separators from both ends.
+7. Truncate to `MaxLength`, trimming any trailing separator.
+
 ## API
 
 ### `Slug`
@@ -52,16 +62,6 @@ Slug.Generate("Hello World", options);  // "Hello_World"
 | `MaxLength` | `200` | Maximum slug length; truncates at a separator boundary |
 | `Separator` | `"-"` | Word separator inserted between tokens |
 | `Lowercase` | `true` | Convert result to lowercase |
-
-### How it works
-
-1. Normalise to Unicode NFD to decompose accented characters.
-2. Strip non-spacing combining marks (removes diacritics).
-3. Optionally convert to lowercase.
-4. Replace every run of non-alphanumeric characters with the separator.
-5. Collapse consecutive separators into one.
-6. Trim separators from both ends.
-7. Truncate to `MaxLength`, trimming any trailing separator.
 
 ## Development
 
