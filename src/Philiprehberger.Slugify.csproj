@@ -7,9 +7,9 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PackageId>Philiprehberger.Slugify</PackageId>
-    <Version>0.1.4</Version>
+    <Version>0.1.5</Version>
     <Authors>Philip Rehberger</Authors>
-    <Description>Convert text to clean URL slugs</Description>
+    <Description>Convert text to clean, URL-safe slugs with Unicode diacritic handling, separator collapsing, and max length enforcement.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/philiprehberger/dotnet-slugify</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

@@ -4,7 +4,7 @@
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.Slugify.svg)](https://www.nuget.org/packages/Philiprehberger.Slugify)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-slugify)](LICENSE)
 
-Convert arbitrary text to clean, URL-safe slugs. Handles Unicode diacritics, collapses separators, and enforces a maximum length — no external dependencies.
+Convert text to clean, URL-safe slugs with Unicode diacritic handling, separator collapsing, and max length enforcement.
 
 ## Installation
 
