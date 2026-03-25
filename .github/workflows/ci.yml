@@ -17,6 +17,7 @@ jobs:
           dotnet-version: '8.0.x'
       - run: dotnet restore src/Philiprehberger.Slugify.csproj
       - run: dotnet build src/Philiprehberger.Slugify.csproj --configuration Release --no-restore
+      - run: dotnet test tests/Philiprehberger.Slugify.Tests/Philiprehberger.Slugify.Tests.csproj --configuration Release --no-restore
 
   publish:
     needs: build
