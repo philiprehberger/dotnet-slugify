@@ -3,6 +3,7 @@
 [![CI](https://github.com/philiprehberger/dotnet-slugify/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/dotnet-slugify/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/Philiprehberger.Slugify.svg)](https://www.nuget.org/packages/Philiprehberger.Slugify)
 [![License](https://img.shields.io/github/license/philiprehberger/dotnet-slugify)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Convert text to clean, URL-safe slugs with Unicode diacritic handling, separator collapsing, and max length enforcement.
 
